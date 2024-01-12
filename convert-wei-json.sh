@@ -6,9 +6,9 @@
 rm -rf output.json output-final.json
 
 #step 1: convert Weicon's JSON
-jq 'to_entries | map({model_name: .key, text_entries: .value | map(.text)})' $1 > output.json
+jq 'to_entries | map({model_name: .key, replies: .value | map(.text)})' $1 > output.json
 
-#step 2, rename model names to something better
+#step 2, rename model in new JSON file
 while IFS= read -r line
 do
   if [[ $line == *"model_name"* ]]; then
@@ -17,6 +17,6 @@ do
     line=${line#*_}
     line="\"model_name\": \"$line\","
   fi
-  echo "$line" >> output-final.json
+  echo "$line" >> $1.cleanedup.json
 done <output.json
 
