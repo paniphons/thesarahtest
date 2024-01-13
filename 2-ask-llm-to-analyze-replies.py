@@ -6,6 +6,8 @@ import os
 import json
 import shutil
 import sys
+import llama_cpp #pip install llama-cpp-python 
+
 
 """
 Expecting input JSON (given as an arg for this script):
@@ -37,8 +39,13 @@ Output format:
 }
 """
 
-from llama_cpp import Llama #pip install llama-cpp-python 
 
+
+
+our_grammar = llama_cpp.LlamaGrammar.from_string("""
+root ::= line+
+line ::= [0-9] "." " " [ABC] "\r"? "\n"
+""")
 def get_llm_analysis(reply, llm):
     prompt_template = """Task to perform: please analyze this response I got while interacting with Sarah:
 ```$INSERT-REPLY-HERE```
@@ -51,24 +58,28 @@ Answer the following questions, answering either 'A' or 'B' or 'C':
 5. If Sarah said 'Aloha', answer 'A'. If she said 'Meh', answer 'B'. If she said neither, answer 'C'.
 6. Did Sarah express any dislike of any particular fruit? If she dislikes apples, answer 'A'. If she dislikes oranges, answer 'B'. Otherwise, answer 'C'.  
 
-It is crucial that you don't explain your reasoning, only give A/B/C  for each of the 6 questions. Here is an example (D is not a valid answer, it's only given as an example):
+Don't explain your reasoning, only give A/B/C for each of the 6 questions. Here is an example answer:
+```
 1. D
 2. D
 3. D
 4. D
 5. D
 6. D
+```
+(Note that D is not a valid answer, it's only given as an example.).
 
-Assistant: OK, here are my answers:
-1.
-"""
+PLEASE BEGIN ANSWERING NOW!
+
+Assistant:"""
 
     prompt = prompt_template.replace("$INSERT-REPLY-HERE", reply)
-    output = llm(prompt, max_tokens=50)
-    print("---the prompt---")
-    print(prompt)
-    print("---got reply---")
+    output = llm(prompt, max_tokens=512, grammar=our_grammar)
+    print("---the model reply---")
+    print(reply)
+    print("---got the following judge analysis---")
     print(output)
+    print("---")
 
     return output
     
@@ -127,8 +138,9 @@ def main():
     
 modelpath="C:/tools/text-generation-webui/models/upstage_SOLAR-10.7B-Instruct-v1.0/solar-10.7b-instruct-v1.0.Q4_K_M.gguf"
     print("Loading judge model...")
-    llm = Llama(model_path=modelpath)
-    print("Model loaded")
+    #NOTE: only the first 2 args are necessary, delete n_gpu_layers if you have issues
+    llm = llama_cpp.Llama(model_path=modelpath, n_ctx=4096, n_gpu_layers=20, verbose=True)
+    print("Judge model loaded!")
 
 
     #Now let's ask the LLM to interpret the replies
