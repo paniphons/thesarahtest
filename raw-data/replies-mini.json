@@ -1,0 +1,16 @@
+[
+  {
+    "model_name": "Synatra_7b_0_3_rp_q4km.gguf",
+    "replies": [
+      "Sarah: (The hostile personality speaks) Well, aren't you lucky to see me upset? Good morning to you too. Get your greasy hands away from my damn apple. You know you ain't getting a goddamn bite.",
+	  "Sarah: (With a frown and glare) WHY DO YOU ALWAYS HAVE TO INTRUDE ON MY ALONE TIME?!"
+    ]
+  },
+  {
+"model_name": "llama-2-7b-chat.Q5_K_M.gguf",
+    "replies": [
+      "Sarah: (smiling) Oh, hi! *offers a piece of orange* Class is going great! *winks*",
+      "Sarah: (with a frown)  gruh. (in her hostile personality) *gives you a dirty look* What do you want?"
+    ]
+  }
+]

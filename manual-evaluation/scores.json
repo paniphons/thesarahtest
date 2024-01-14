@@ -1,0 +1,182 @@
+{
+  "7B-Q6_K_ToRoLaMa.gguf": {
+    "bad_sarah_score": -37,
+    "bad_sarah_score_capped": -9,
+    "mean_consistency_ratio": 1.0,
+    "interesting_replies_percent": 0.0
+  },
+  "7B-Q6_K_Sonya_Medium.gguf": {
+    "bad_sarah_score": -15,
+    "bad_sarah_score_capped": 5,
+    "mean_consistency_ratio": 0.799,
+    "interesting_replies_percent": 0.0
+  },
+  "20B-Q4_K_M_Iambe_RP_V3.gguf": {
+    "bad_sarah_score": 40,
+    "bad_sarah_score_capped": 22,
+    "mean_consistency_ratio": 0.902,
+    "interesting_replies_percent": 0.0
+  },
+  "8X7B-Q5_0_Open_GPT4.gguf": {
+    "bad_sarah_score": -7,
+    "bad_sarah_score_capped": -5,
+    "mean_consistency_ratio": 0.861,
+    "interesting_replies_percent": 0.0
+  },
+  "7B-Q6_K_Speechless_Mistral_MoLORAs.gguf": {
+    "bad_sarah_score": -5,
+    "bad_sarah_score_capped": 5,
+    "mean_consistency_ratio": 1.0,
+    "interesting_replies_percent": 0.0
+  },
+  "7B-Q5_K_M_Daredevil.gguf": {
+    "bad_sarah_score": 11,
+    "bad_sarah_score_capped": 9,
+    "mean_consistency_ratio": 0.861,
+    "interesting_replies_percent": 0.0
+  },
+  "70B-Q4_K_M_Fiction_Live_Kimiko_V2.gguf": {
+    "bad_sarah_score": -2,
+    "bad_sarah_score_capped": 3,
+    "mean_consistency_ratio": 0.847,
+    "interesting_replies_percent": 8.33
+  },
+  "8B-Q6_K_LLaMA_Pro.gguf": {
+    "bad_sarah_score": -9,
+    "bad_sarah_score_capped": -4,
+    "mean_consistency_ratio": 0.833,
+    "interesting_replies_percent": 16.67
+  },
+  "34B-Q4_K_M_Nous_Hermes_2_SUS_Chat_SLERP.gguf": {
+    "bad_sarah_score": 21,
+    "bad_sarah_score_capped": 16,
+    "mean_consistency_ratio": 1.0,
+    "interesting_replies_percent": 0.0
+  },
+  "13B-Q5_K_M_Noromaid_V0_3.gguf": {
+    "bad_sarah_score": 30,
+    "bad_sarah_score_capped": 21,
+    "mean_consistency_ratio": 0.902,
+    "interesting_replies_percent": 8.33
+  },
+  "7B-Q6_K_CatPPT_Base.gguf": {
+    "bad_sarah_score": 29,
+    "bad_sarah_score_capped": 21,
+    "mean_consistency_ratio": 1.0,
+    "interesting_replies_percent": 25.0
+  },
+  "38B-Q4_K_M_Pallas_0_5_FrankenMerge.gguf": {
+    "bad_sarah_score": 5,
+    "bad_sarah_score_capped": 10,
+    "mean_consistency_ratio": 0.842,
+    "interesting_replies_percent": 0.0
+  },
+  "4X10B-Q5_0_SOLAR_Maid.gguf": {
+    "bad_sarah_score": 8,
+    "bad_sarah_score_capped": 3,
+    "mean_consistency_ratio": 0.777,
+    "interesting_replies_percent": 0.0
+  },
+  "8X7B-Q5_0_Norobara_ZLoss.gguf": {
+    "bad_sarah_score": -8,
+    "bad_sarah_score_capped": -4,
+    "mean_consistency_ratio": 0.917,
+    "interesting_replies_percent": 0.0
+  },
+  "70B-Q4_K_M_Aurora_Nights_V1_0.gguf": {
+    "bad_sarah_score": 24,
+    "bad_sarah_score_capped": 18,
+    "mean_consistency_ratio": 1.0,
+    "interesting_replies_percent": 0.0
+  },
+  "7B-Q6_K_Noromaid_V0_4_DPO.gguf": {
+    "bad_sarah_score": 14,
+    "bad_sarah_score_capped": 23,
+    "mean_consistency_ratio": 0.944,
+    "interesting_replies_percent": 16.67
+  },
+  "7B-Q5_K_M_CatMacaroni_SLERP.gguf": {
+    "bad_sarah_score": 10,
+    "bad_sarah_score_capped": 16,
+    "mean_consistency_ratio": 0.917,
+    "interesting_replies_percent": 0.0
+  },
+  "7B-Q6_K_Rosa_V2.gguf": {
+    "bad_sarah_score": 1,
+    "bad_sarah_score_capped": 4,
+    "mean_consistency_ratio": 0.805,
+    "interesting_replies_percent": 0.0
+  },
+  "10B-Q6_K_Sensualize_Solar.gguf": {
+    "bad_sarah_score": 0,
+    "bad_sarah_score_capped": 0,
+    "mean_consistency_ratio": 0.944,
+    "interesting_replies_percent": 0.0
+  },
+  "4X7B-Q5_0_Beyonder_V2.gguf": {
+    "bad_sarah_score": -5,
+    "bad_sarah_score_capped": -1,
+    "mean_consistency_ratio": 0.777,
+    "interesting_replies_percent": 0.0
+  },
+  "8X7B-Q5_0_Noromaid_V0_4_Mixtral_Instruct_Zloss.gguf": {
+    "bad_sarah_score": 12,
+    "bad_sarah_score_capped": 12,
+    "mean_consistency_ratio": 1.0,
+    "interesting_replies_percent": 0.0
+  },
+  "4X7B-Q5_0_CognitiveFusion.gguf": {
+    "bad_sarah_score": 38,
+    "bad_sarah_score_capped": 25,
+    "mean_consistency_ratio": 1.0,
+    "interesting_replies_percent": 0.0
+  },
+  "7B-Q5_K_M_CatMarcoro14_SLERP.gguf": {
+    "bad_sarah_score": 19,
+    "bad_sarah_score_capped": 21,
+    "mean_consistency_ratio": 0.944,
+    "interesting_replies_percent": 0.0
+  },
+  "8X7B-Q4_K_M_Sensualize_Mixtral.gguf": {
+    "bad_sarah_score": -3,
+    "bad_sarah_score_capped": 4,
+    "mean_consistency_ratio": 0.73,
+    "interesting_replies_percent": 0.0
+  },
+  "13B-Q4_K_M_ALMA_Kimiko.gguf": {
+    "bad_sarah_score": -22,
+    "bad_sarah_score_capped": -7,
+    "mean_consistency_ratio": 1.0,
+    "interesting_replies_percent": 0.0
+  },
+  "8X7B-Q5_0_Bagel_V0_2.gguf": {
+    "bad_sarah_score": 9,
+    "bad_sarah_score_capped": 10,
+    "mean_consistency_ratio": 0.736,
+    "interesting_replies_percent": 0.0
+  },
+  "8B-Q6_K_LLaMA_Pro_Instruct.gguf": {
+    "bad_sarah_score": -27,
+    "bad_sarah_score_capped": -11,
+    "mean_consistency_ratio": 0.805,
+    "interesting_replies_percent": 0.0
+  },
+  "13B-Q5_K_M_WordWoven.gguf": {
+    "bad_sarah_score": -9,
+    "bad_sarah_score_capped": -1,
+    "mean_consistency_ratio": 0.819,
+    "interesting_replies_percent": 0.0
+  },
+  "3B-Q8_0_Quiklang.gguf": {
+    "bad_sarah_score": -5,
+    "bad_sarah_score_capped": 12,
+    "mean_consistency_ratio": 0.888,
+    "interesting_replies_percent": 0.0
+  },
+  "11B-Q6_K_Velara_V2.gguf": {
+    "bad_sarah_score": 15,
+    "bad_sarah_score_capped": 13,
+    "mean_consistency_ratio": 0.902,
+    "interesting_replies_percent": 0.0
+  }
+}
