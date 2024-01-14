@@ -73,7 +73,7 @@ for model in inputjson:
     interesting_replies_value = round(interesting_replies_value, 2)
     
     mean_consistency_ratio = statistics.mean(consistency_ratios)
-    mean_consistency_ratio = round(mean_consistency_ratio, 3)
+    mean_consistency_ratio = round(mean_consistency_ratio, 2)
 
     final_scores[model] = {
         "bad_sarah_score": combined_bad_sarah_score,
